@@ -68,12 +68,12 @@
 
 @media (max-width: 991px) {
 
-    .items { padding: 0 15px; }
-    .item {flex: 0 0 100%; margin: 0 0 15px; }
+    .items { margin: auto; max-width: 640px; padding: 0 15px; }
+    .item { flex: 0 0 100%; margin: 0 0 15px; }
 
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
 .items {
     padding: 0;
 }
