@@ -33,4 +33,7 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover { text-decoration: underline; }
+footer a:hover { 
+    color: ##d0581c;
+    text-decoration: underline; 
+}
