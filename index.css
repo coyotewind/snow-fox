@@ -1,0 +1,111 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* flexbox for main structural elements */
+
+body {
+  background: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Dosis',sans-serif;
+}
+
+main {
+  display: flex;
+  flex: 1 0 auto;
+  margin: auto;
+  max-width: 1920px;
+  padding: 30px;
+}
+
+/* mobile menu stuff */
+
+.aside-area {
+  background: #1F2533;
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 280px;
+  z-index: 200;
+}
+
+.aside-area .nav {
+  padding: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.aside-area .nav ul { list-style-type: none; }
+
+.aside-area .nav li a {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  color: #EAEAEA;
+  display: block;
+  font-family: 'Dosis',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+}
+
+.aside-area .nav li a:hover { color: #d0581c; }
+
+.aside-area .nav li:last-child a { border: none; }
+
+.content-area {
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+.content-area.menu {
+  transform: translateX(280px);
+  transition: transform 0.5s ease;
+}
+
+.aside-area {
+  transform: translateX(-280px);
+  transition: transform 0.5s ease;
+}
+
+.aside-area.menu {
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+#menu { padding: 0 15px; }
+#bars { cursor: pointer; height: 50px; position: relative; transform: rotate(0deg); width: 30px; }
+#bars span { background: #FFFFFF; display: block; height: 2px; left: 0; opacity: 1; position: absolute; }
+#bars span { transform: rotate(0deg); transition: 0.3s ease-in-out; width: 100%; }
+#bars span:hover { background: #FFFFFF; }
+
+#bars span:nth-child(1) { top: 16px; }
+#bars span:nth-child(2) { top: 24px; }
+#bars span:nth-child(3) { top: 24px; }
+#bars span:nth-child(4) { top: 32px; opacity: 1; visibility: visible; }
+
+#bars.open span { display: block; height: 2px; transition: 0.3s ease-in-out; }
+#bars.open span:nth-child(1) { left: 50%; top: 10px; width: 0%; }
+#bars.open span:nth-child(2) { transform: rotate(45deg); }
+#bars.open span:nth-child(3) { transform: rotate(-45deg); }
+#bars.open span:nth-child(4) { opacity: 0; visibility: hidden; }
+
+
+@media (max-width: 991px) {  
+  
+  main {
+      flex-wrap: wrap;
+      flex: 0 0 100%;
+      margin: 0 auto;
+      padding: 30px 15px;
+  }
+
+}

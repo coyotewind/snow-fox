@@ -1,0 +1,36 @@
+/* footer area */
+
+footer {
+    justify-content: center;
+    background-color: #2a4158;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 30px 30px;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    margin: 0 60px 60px;
+}
+
+footer h2 {
+    color: #EAEAEA;
+    font-size: 24px;
+    border-bottom: 1px solid #EAEAEA;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 0;
+}
+
+footer a {
+    color: #EAEAEA;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer a:hover { text-decoration: underline; }

@@ -1,0 +1,157 @@
+/* ---- primary nav ---- */
+
+.main-nav {
+    align-items: center;
+    background: #2a4158;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* ---- mobile first nav ---- */
+
+.full-width { display: none; }
+.short-width { display: flex; }
+
+/* ---- primary nav itmes ----  */
+
+.nav-list {
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-list:first-child {
+    display: flex;
+}
+
+.nav-list li { list-style-type: none; }
+
+.nav-list li a {
+    border-right: 1px solid #EAEAEA;
+    color: #EAEAEA;
+    font-family: 'Dosis',sans-serif;
+    font-size: 18px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.nav-list li a:hover { text-decoration: underline; }
+.nav-list li:last-of-type a { border-right: none; }
+
+.nav-list:nth-child(2) i.material-icons {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+}
+
+.nav-list:nth-child(3) i.material-icons,
+.short-width i.material-icons {
+    font-size: 30px;
+    position: relative;
+    top: 2px;
+}
+
+/* ---- subnav ---- */
+
+.sub-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1920px;
+    padding: 80px 30px 0;
+}
+
+/* ---- left column for logo ---- */
+
+.company-name {
+    color: #222831;
+    display: flex;
+    flex: 0 0 200px;
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 48px;
+    justify-content: center;
+    position: relative;
+    padding: 0 12px;
+    top: -3px;
+}
+
+/* ---- center column search form elements ---- */
+
+.search-form {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 30px;
+}
+
+input,
+button { 
+    border: none;
+    height: 48px; 
+}
+
+input { 
+    border-bottom: 2px solid #9a9a9a;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    flex-grow: 1; 
+    padding: 0 10px;  
+}
+
+button {
+    background-color: #6f97d9;
+    border-radius: 0 4px 4px 0;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    width: 48px;
+}
+
+button .material-icons {
+    position: relative;
+    top: 2px;
+    left: 1px;
+}
+
+/* ---- right column for special offer ---- */
+
+.credit-offer {
+    align-items: center;
+    background: #d0581c;
+    border-radius: 4px;
+    color: #FFFFFF;
+    display: flex;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    height: 46px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.credit-offer:hover { background-color: #2a4158; }
+
+/* hide mobile menu on desktop */
+
+@media (min-width: 992px) {
+
+    .full-width { display: flex; }
+    .short-width { display: none;  } 
+}
+
+@media (max-width: 991px) {
+
+    .sub-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 80px 15px 0;
+    }
+
+    .sub-item {
+        margin-bottom: 20px;
+    }    
+
+}

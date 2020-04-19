@@ -1,0 +1,51 @@
+/* categories sidebar nav */
+
+nav.categories {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+}
+
+nav.categories a {
+    background-color: #6f97d9;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+nav.categories a:hover {
+    background-color: #2a4158;
+    box-shadow: 0 2px 5px -2px black;
+}
+
+nav.categories a:last-child { margin-bottom: 0; }
+
+@media (max-width: 991px) {
+
+    nav.categories {
+        padding-bottom: 30px;
+        flex-flow: row wrap;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    nav.categories a {
+        flex: 0 0 180px;
+        margin: 0 10px 20px !important;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    nav.categories a {
+        flex: 0 0 100%;
+        margin: 0 10px 10px !important;
+    }
+
+}
