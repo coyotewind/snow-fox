@@ -20,7 +20,7 @@ main {
   display: flex;
   flex: 1 0 auto;
   margin: auto;
-  max-width: 1920px;
+  max-width: 1600px;
   padding: 30px;
 }
 
