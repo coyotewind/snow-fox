@@ -156,9 +156,8 @@ button .material-icons {
     }
     
     .search-form {
-        flex: 0 0 500px;
-        max-width: 380px;  
-        padding: 0;
+        flex: 0 0 440px;
+        max-width: 440px;  
     }
 
     .credit-offer {
