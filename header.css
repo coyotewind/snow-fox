@@ -55,6 +55,13 @@
     top: 2px;
 }
 
+.nav-list:nth-child(3) a:hover i.material-icons,
+.short-width a:hover i.material-icons {
+    color: #d0581c;
+}
+
+
+
 /* ---- subnav ---- */
 
 .sub-nav {
