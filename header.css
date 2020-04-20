@@ -152,6 +152,20 @@ button .material-icons {
 
     .sub-item {
         margin-bottom: 20px;
-    }    
+    }
+    
+    .company-name {
+
+    }
+    
+    .search-form {
+        flex: 0 0 500px;        
+    }
+
+    .credit-offer {
+        flex: 0 0 100%;
+        max-width: 380px;
+    }
+    
 
 }
