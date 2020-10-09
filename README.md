@@ -1,6 +1,6 @@
 # Quirty Web Store
 
-### Description
+### Description:
 
 This was a starter HMTL/CSS project which can be viewed at https://snow-fox.netlify.app/
 
