@@ -2,11 +2,11 @@
 
 ### Description
 
-This was a starter HMTL/CSS project which can be viewed here https://snow-fox.netlify.app/
+This was a starter HMTL/CSS project which can be viewed at https://snow-fox.netlify.app/
 
 ### What I Learned:
 
-I had the opportunity to get better as CSS Flex Box designs.
+I had the opportunity to get better at CSS Flex Box designs.
 
 ### What I am Proud Of:
 
