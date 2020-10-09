@@ -14,4 +14,4 @@ I was really exicted to make this one page site fully mobile responsive
 
 ### How I Would Uplevel It:
 
-If I had mor time I would add more pages to this site.
+If I had more time I would add more pages to this site.
